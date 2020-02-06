@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<style>
+    .ruler {
+        border-left: 2px solid tan;
+        height: 60%;
+        position: absolute;
+        left: 50%;
+    }
+    body{
+        background-image: url(image1.png);
+        background-size: 70%;
+    }
+    #recipe-results{
+        background-color: antiquewhite;
+    }
+    #step{
+        background-color: antiquewhite;
+    }
+    #instructions{
+        color: royalblue;
+        border: 2px solid tan;
+    }
+    #ingredients{
+        color: royalblue;
+        border: 2px solid tan;
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-9"> <div class="col-3"><img src="img/images1.png" class="rounded-circle  img-thumbnail shadow-lg"></div>
+        </div>
+    </div>
+    <div class="contsiner mt-2">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <select class="form-control" id="recipe">
+                    <option value="" disabled selected>Choose recipe</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="col-12" id="recipe-result"></div>
+    </div>
+    <div class="container mt-4">
+        <div id="image">
+        <div class="row shadow-lg">
+            <div class="col-3"><img src="img/img1.png" class="table table-hover img-fluid img-thumbnail shadow-lg"><h3 class="card mt-2 shadow-lg" id="img1" img-thumbnail>Curry</h3></div>
+            <div class="col-3"><img src="img/img2.png" class="table table-hover img-fluid img-thumbnail shadow-lg"><h3 class="card mt-2 shadow-lg" id="img1" img-thumbnail>Fried meat</h3></div>
+            <div class="col-3"><img src="img/img3.png" class="table table-hover img-fluid img-thumbnail shadow-lg"><h3 class="card mt-2 shadow-lg" id="img1" img-thumbnail>Biscuits</h3></div>
+            <div class="col-3"><img src="img/img4.png" class="table table-hover img-fluid img-thumbnail shadow-lg"><h3 class="card mt-2 shadow-lg" id="img1" img-thumbnail>Cook​​​ vegetables</h3></div>
+        </div>
+    </div>
+    </div>
+    <div class="container mt-4 ">
+        <div class="row" id="guest">
+                <div class="col-3"></div>
+            <div class="col-3 shadow-lg">
+                <h3>Number of persons</h3>
+            </div>
+            <div class="col-6">
+                    <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-primary" type="button" id="minus">&minus;</button>
+                            </div>
+                            <input type="number" class="form-control text-center" value="0" disabled id="member">
+                            <div class="input-group-append">
+                                <button class="btn btn-success" type="button" id="add">&#x2b;</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- </div>
+    <div class="container-fluid "> -->
+        <div class="row mt-4">
+            <div class="col-6">
+                <h4 id="ingredients"></h4>
+                <table class="table table-borderless table-hover text-dark mt-4" id="recipe-results"></table>
+            </div>
+            <div class="ruler" id="ruler"></div>
+            <div class="col-6">
+                <h4 id="instructions"></h4>
+                <table class="table table-borderless table-hover text-dark mt-4" id="step"></table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/project.js"></script>
+</body>
+
+</html>
